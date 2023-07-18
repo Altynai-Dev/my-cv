@@ -1,0 +1,86 @@
+@media all and (max-width: 1024px){
+    .hero{
+        width: 70%;
+    }
+}
+
+@media all and (max-width: 768px){
+    .porfolio__projects{
+        flex-wrap: wrap;
+    }
+}
+
+@media all and (max-width: 425px){
+    .navbar__list{
+        display: none;
+    }
+    .navbar__btn_burger{
+        display: block;
+        width: 50px;
+        height: 50px;
+    }
+    .burger-menu{
+        background-color: #f5f5dc;
+        padding-bottom: 20px;
+    }
+    .burger-menu__content{
+        margin-left: 30px;
+        padding-top: 10px;
+    }
+    .burger-menu__content img{
+        width: 50px;
+        height: 50px;
+    }
+    .burger-menu__list li{
+        list-style-type: none;
+        text-decoration: none;
+        width: 90%;
+        background: #fff;
+        margin-bottom: 15px;
+        padding: 5px;
+        text-align: center;
+    }
+    .burger-menu__list  a{
+        text-decoration: none;
+        color: #333;
+        text-transform: uppercase;
+    }
+    .burger-menu__list  a:hover{
+        color: rgb(243, 195, 132);
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .hero{
+        flex-wrap: wrap;
+    }
+    .info{
+        display: none;
+    }
+    .contact__main{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact__main form{
+        margin-bottom: 30px;
+    }
+}
+
+@media all and (max-width: 375px){
+    .projects__item img{
+        width: 100%;
+    }
+    .contact form{
+        width: 100%;
+    }
+}
+@media all and (max-width: 320px){
+    .container{
+        width: 100%;
+        padding: 20px;
+    }
+    .hero{
+        margin-top: -10%;
+    }
+}

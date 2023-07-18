@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    color: #333;
+    width: 100%;
+}
+.wrapper{
+    background-image: url("../assets/pexels-stephan-seeber-1261728.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+
+    width: 100%;
+}
+.burger-menu{
+    display: none;
+}
+header{
+    width: 100%;
+    height: 100px;
+}
+.navbar{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+.navbar__btn_burger{
+    display: none;
+}
+.navbar img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: .7s;
+    margin-left: 5%;
+}
+.navbar__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+.navbar__list li{
+    list-style-type: none;
+}
+.navbar__list a{
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .5s;
+    opacity: 0;
+    animation: slideTop 0.5s ease forwards;
+    animation-delay: calc(.5s * var(--i));
+    display: inline-block;
+}
+.navbar__list a:hover,
+.navbar__list a.active{
+    border: 1px solid #fff;
+   
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+/* hero start */
+.hero__box{
+    width: 280px;
+    height: 375px;
+    background-color: #fff;
+    animation: floatImage 4s ease-in-out infinite;
+    animation-delay: 3s;
+    border-radius: 30px;
+}
+.hero{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    padding-bottom: 100px;
+}
+.hero__box img{
+    width: 230px;
+    height: 270px;
+    object-fit: cover;
+    position: relative;
+    top: 25px;
+    left: 25px;
+    margin-bottom: 25px;
+    opacity: 0;
+    animation: zoomIn 1s ease forwards;
+    animation-delay: 2s;
+    border-radius: 30px;
+}
+.hero__box h1{
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.hero__box p{
+    font-size: 14px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    background: #d8e0e4;
+    width: 230px;
+    margin-left: 25px;
+}
+.hero__right{
+    color: #fff;
+}
+.hero__right h3{
+    width: 134px;
+    height: 45px;
+    background: #333;
+    font-size: 24px;
+    padding-left: 35px;
+    padding-top: 5px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    animation: slideBottom  1s ease forwards;
+    animation-delay: .7s;
+}
+.hero__right h2{
+    font-size: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    animation: slideTop  1s ease forwards;
+    animation-delay: .7s;
+}
+.hero__right p{
+    font-size: 16px;
+    animation: slideBottom  1s ease forwards;
+    animation-delay: .7s;
+}
+.hero__buttons{
+    width: 345px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 1s;
+}
+.hero__buttons button:nth-child(2){
+    background: transparent;
+    color: #fff;
+}
+.hero__buttons button:hover{
+    background-color: rgb(235, 201, 138);
+    transition: 0.5s;
+}
+.hero__buttons button{
+    width: 150px;
+    height: 100%;
+    background: #fff;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: #333;
+    font-size: 18px;
+}
+.hero__buttons button a{
+    color: #333;
+}
+/* hero end */
+/* skills start */
+.blocks{
+    margin: 50px auto;
+    background-color: #f5f5dc;
+    border-radius: 30px;
+    padding: 50px;
+}
+.title{
+    text-align: center;
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.text{
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+.skills hr{
+    margin-bottom: 45px;
+}
+.skills__box{
+    width: 50%;
+    margin: 0 auto;
+}
+.skill__item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 15px;
+}
+/* skills end */
+.porfolio__projects{
+    display: flex;
+    justify-content: space-between;
+}
+.projects__item{
+    background: #fff;
+    padding: 15px;
+    cursor: pointer;
+}
+.projects__item img{
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+
+}
+.projects__item p{
+    text-align: center;
+}
+.projects__item a{
+    color: inherit;
+}
+.info__facts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info__left .info__list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.info__right .info__list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.info__list li{
+    list-style-type: none;
+}
+.contact__main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact__main form{
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+   
+}
+.contact__main form input{
+    margin-bottom: 10px;
+    font-size: 16px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+}
+.contact__main form textarea{
+    margin-bottom: 10px;
+    font-size: 16px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+}
+
+.contact__main form button{
+    font-size: 16px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: #99c5db;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+}
+.contact__main form button:hover{
+    background-color: rgb(235, 201, 138);
+    transition: 0.5s;
+}
+
+.contact__item{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+}
+
+.footer{
+    background-color: #e6e6a3;
+}
+
+.navbar__list_footer a{
+    color: #333;
+    cursor: pointer;
+}
+
+.navbar__list_footer a:hover{
+    border: 1px solid #333;
+}
+
+.footer__icons img{
+    width: 35px;
+    height: 35px;
+}
+
+/* KEYFRAMES ANIMATION */
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes floatImage{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-24px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
